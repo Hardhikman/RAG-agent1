@@ -1,17 +1,17 @@
 # 🧠 UPSC Question Paper Generator AI Agent
 
-This is a production-ready AI-powered RAG (Retrieval Augmented Generation) system that generates new UPSC GS questions by learning from previous year question papers (PYQs). Built with `LangChain`, `ChromaDB`, `Ollama`, and `Gradio`.
+A production-ready RAG (Retrieval Augmented Generation) pipeline to generate new UPSC GS questions from PYQs using local LLMs like `phi3` or `mistral` via [Ollama](https://ollama.com), powered by `LangChain`, `ChromaDB`, and `Gradio`.
 
 ---
 
 ## 🚀 Features
 
-- 🔍 Parses and extracts PYQs from PDFs.
-- 🧠 Vectorizes and stores questions using ChromaDB.
-- 📚 Tags questions based on GS paper structure.
-- 🧪 Generates new UPSC-style questions using local LLMs via Ollama.
-- 💻 Intuitive Gradio interface for interaction.
-- 🗃️ Organized modular structure for clarity and scalability.
+- 🔍 Extracts questions from UPSC GS PDF files.
+- 🏷️ Tags questions by year and paper (e.g., GS1, GS2).
+- 📚 Builds vector DB using ChromaDB.
+- 🧠 Generates new questions via LLMs with LangChain & Ollama.
+- 💻 Interactive Gradio UI for UPSC aspirants and educators.
+- ⚙️ Modular codebase and structured folders.
 
 ---
 
@@ -40,77 +40,85 @@ upsc-agent/
 
 ## ⚙️ Setup Instructions
 
-### 1. 🛠️ Install Dependencies
+### 1. Install Python dependencies
 
 ```bash
 pip install -r requirements.txt
 
-2. 📦 Install & Set Up Ollama
+### **2. Install and Run Ollama**
 
-    Download Ollama.
+    Download and install from: https://ollama.com
 
     Start the Ollama server:
 
 ollama serve
 
-    Pull your desired model (e.g., phi3):
+    Pull a model (e.g., phi3, mistral, etc.):
 
 ollama pull phi3
 
-    💡 Or link existing models via environment variable:
+Optional: Link models from another disk
 
-export OLLAMA_MODELS="/path/to/ollama/models"
+export OLLAMA_MODELS="/path/to/external/drive/ollama/models"
 
-3. 🔍 Add UPSC PDFs
+You can add that to .bashrc or .zshrc for persistence.
 
-Place UPSC GS PDFs in pyq_data/ folder. Ensure filenames include the year for parsing logic to work correctly.
-🧪 Run Components
-➤ Parse PDFs
+🧪 How to Run
+➤ Step 1: Parse UPSC PDFs
+
+Place your GS question paper PDFs into pyq_data/. Then run:
 
 python parse_papers.py
 
-➤ Tag Questions (e.g., GS1/GS2)
+➤ Step 2: Tag Questions
 
 python tag_questions.py
 
-➤ Build Vector Store
+➤ Step 3: Build Vector Store
 
 python vector_store.py
 
-➤ Generate New Questions
+➤ Step 4: Generate New Questions
 
 python generate_questions.py
 
-➤ Run the UI (Gradio)
+➤ Step 5: Run UI
 
 python app.py
 
-Then open the link shown in your terminal to interact with the app.
-🧠 Tech Stack
-Tool	Purpose
-Python	Core logic
-Ollama	Local LLM execution
-LangChain	Prompt chaining and orchestration
-ChromaDB	Vector database for RAG
-Gradio	Frontend interface
-PyMuPDF	PDF parsing
-Supabase	(Optional) Key storage
-📌 Todo & Ideas
+Then open the link shown in the terminal to access the Gradio interface.
+📚 Tech Stack
+Tool	Use
+Python	Core programming
+PyMuPDF	Extract questions from PDFs
+LangChain	Prompt chaining
+Ollama	Run local LLMs (phi3, etc.)
+ChromaDB	Vector DB
+Gradio	User interface
+Supabase	(Optional) Cloud sync
+🧠 Use Cases
 
-Add tagging by theme (e.g., Geography, Ethics, etc.)
+    Generate mock UPSC GS questions
 
-Integrate Supabase for cloud sync
+    Practice for prelims/mains with AI-curated content
 
-Add Mistral or Code Llama support
+    Academic content generation for coaching institutes
 
-Export generated questions as PDFs
+🛠️ To-Do
 
-    Add API support for integration with other platforms
+Filter by topic (e.g., Polity, IR, Geography)
 
-👨‍💻 Author
+Save generated sets as PDFs
+
+Add answer key generation (GPT-style reasoning)
+
+    Supabase backend for cloud storage
+
+🧑‍💻 Author
 
 Hardhik M
-📫 GitHub
+📫 GitHub Profile
 🪪 License
 
 This project is licensed under the MIT License.
+🌟 Star this repo if you find it helpful!
