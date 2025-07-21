@@ -42,7 +42,7 @@ upsc-agent/
 
 ### 1. Install Python dependencies
 
-pip install -r requirements.txt
+    pip install -r requirements.txt
 
 ### 2. Install and Run Ollama
 
@@ -106,11 +106,11 @@ Supabase	(Optional) Cloud sync
 
 ## 🛠️ To-Do
 
-Filter by topic (e.g., Polity, IR, Geography)
+    Filter by topic (e.g., Polity, IR, Geography)
 
-Save generated sets as PDFs
+    Save generated sets as PDFs
 
-Add answer key generation (GPT-style reasoning)
+    Add answer key generation (GPT-style reasoning)
 
     Supabase backend for cloud storage
 
