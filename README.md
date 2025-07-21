@@ -42,20 +42,15 @@ upsc-agent/
 
 ### 1. Install Python dependencies
 
-```bash
 pip install -r requirements.txt
 
-### **2. Install and Run Ollama**
+### 2. Install and Run Ollama
 
     Download and install from: https://ollama.com
 
-    Start the Ollama server:
+    Start the Ollama server: ollama serve
 
-ollama serve
-
-    Pull a model (e.g., phi3, mistral, etc.):
-
-ollama pull phi3
+    Pull a model (e.g., phi3, mistral, etc.): ollama pull phi3
 
 Optional: Link models from another disk
 
@@ -63,7 +58,8 @@ export OLLAMA_MODELS="/path/to/external/drive/ollama/models"
 
 You can add that to .bashrc or .zshrc for persistence.
 
-🧪 How to Run
+## 🧪 How to Run
+
 ➤ Step 1: Parse UPSC PDFs
 
 Place your GS question paper PDFs into pyq_data/. Then run:
@@ -96,7 +92,8 @@ Ollama	Run local LLMs (phi3, etc.)
 ChromaDB	Vector DB
 Gradio	User interface
 Supabase	(Optional) Cloud sync
-🧠 Use Cases
+
+## 🧠 Use Cases
 
     Generate mock UPSC GS questions
 
@@ -104,7 +101,7 @@ Supabase	(Optional) Cloud sync
 
     Academic content generation for coaching institutes
 
-🛠️ To-Do
+## 🛠️ To-Do
 
 Filter by topic (e.g., Polity, IR, Geography)
 
@@ -114,11 +111,10 @@ Add answer key generation (GPT-style reasoning)
 
     Supabase backend for cloud storage
 
-🧑‍💻 Author
-
+## 🧑‍💻 Author
 Hardhik M
-📫 GitHub Profile
-🪪 License
 
+## 🪪 License
 This project is licensed under the MIT License.
+
 🌟 Star this repo if you find it helpful!
