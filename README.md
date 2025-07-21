@@ -83,7 +83,10 @@ python generate_questions.py
 python app.py
 
 Then open the link shown in the terminal to access the Gradio interface.
-📚 Tech Stack
+<img width="1366" height="768" alt="New app" src="https://github.com/user-attachments/assets/c42f36b9-28fb-40ed-9e38-4c3923d5810c" />
+
+
+## 📚 Tech Stack
 Tool	Use
 Python	Core programming
 PyMuPDF	Extract questions from PDFs
