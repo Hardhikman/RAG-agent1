@@ -17,23 +17,23 @@ A production-ready RAG (Retrieval Augmented Generation) pipeline to generate new
 
 ## 📁 Project Structure
 
-upsc-agent/
-│
-├── pyq_data/ # Input PDFs of GS papers
-├── data/ # Processed data and vector store
-│ ├── chunks.json
-│ ├── tagged_questions.json
-│ └── chroma_db/
-│
-├── supabase.env # Your Supabase keys (gitignored)
-├── parse_papers.py # PDF parsing logic
-├── tag_questions.py # Tagging logic
-├── vector_store.py # ChromaDB vectorization
-├── generate_questions.py # AI generation using Ollama
-├── app.py # Gradio interface
-├── requirements.txt # Python dependencies
-├── .gitignore
-└── README.md
+    upsc-agent/
+    │
+    ├── pyq_data/ # Input PDFs of GS papers
+    ├── data/ # Processed data and vector store
+    │ ├── chunks.json
+    │ ├── tagged_questions.json
+    │ └── chroma_db/
+    │
+    ├── supabase.env # Your Supabase keys (gitignored)
+    ├── parse_papers.py # PDF parsing logic
+    ├── tag_questions.py # Tagging logic
+    ├── vector_store.py # ChromaDB vectorization
+    ├── generate_questions.py # AI generation using Ollama
+    ├── app.py # Gradio interface
+    ├── requirements.txt # Python dependencies
+    ├── .gitignore
+    └── README.md
 
 
 ---
