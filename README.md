@@ -60,27 +60,27 @@ You can add that to .bashrc or .zshrc for persistence.
 
 ## 🧪 How to Run
 
-➤ Step 1: Parse UPSC PDFs
-
-Place your GS question paper PDFs into pyq_data/. Then run:
-
-python parse_papers.py
-
-➤ Step 2: Tag Questions
-
-python tag_questions.py
-
-➤ Step 3: Build Vector Store
-
-python vector_store.py
-
-➤ Step 4: Generate New Questions
-
-python generate_questions.py
-
-➤ Step 5: Run UI
-
-python app.py
+    ➤ Step 1: Parse UPSC PDFs
+    
+    Place your GS question paper PDFs into pyq_data/. Then run:
+    
+    python parse_papers.py
+    
+    ➤ Step 2: Tag Questions
+    
+    python tag_questions.py
+    
+    ➤ Step 3: Build Vector Store
+    
+    python vector_store.py
+    
+    ➤ Step 4: Generate New Questions
+    
+    python generate_questions.py
+    
+    ➤ Step 5: Run UI
+    
+    python app.py
 
 Then open the link shown in the terminal to access the Gradio interface.
 <img width="1366" height="768" alt="New app" src="https://github.com/user-attachments/assets/c42f36b9-28fb-40ed-9e38-4c3923d5810c" />
