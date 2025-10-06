@@ -87,14 +87,14 @@ Then open the link shown in the terminal to access the Gradio interface.
 
 
 ## 📚 Tech Stack
-Tool	Use
-Python	Core programming
-PyMuPDF	Extract questions from PDFs
-LangChain	Prompt chaining
-Ollama	Run local LLMs (phi3, etc.)
-ChromaDB	Vector DB
-Gradio	User interface
-Supabase	(Optional) Cloud sync
+    Tool	Use
+    Python	Core programming
+    PyMuPDF	Extract questions from PDFs
+    LangChain	Prompt chaining
+    Ollama	Run local LLMs (phi3, etc.)
+    ChromaDB	Vector DB
+    Gradio	User interface
+    Supabase	(Optional) Cloud sync
 
 ## 🧠 Use Cases
 
