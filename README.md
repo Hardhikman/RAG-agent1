@@ -87,7 +87,7 @@ Then open the link shown in the terminal to access the Gradio interface.
 
 
 ## 📚 Tech Stack
-    Tool	Use
+    **Tool	Use**
     Python	Core programming
     PyMuPDF	Extract questions from PDFs
     LangChain	Prompt chaining
